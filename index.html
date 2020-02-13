@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compound interest Calcuklator is a online tool to check the interest calculated on the initial principal, which also includes all of the accumulated interest of previous periods of a deposit or loan."/>
+    <title>Compound Calculator Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home">
+        <div class="home__result">
+            <p class="home__result-label">Future Balance</p>
+            <p class="home__result-amount">₱ 3,249,013</p>
+        </div>
+        <div class="home__container">
+            <div class="card mb-2">
+                <label class="mb-2">Base Amount</label>
+                <p class="home__result-amount mb-1">₱ 0</p>
+                <input type="range" min="0" max="1000000" value="0" class="slider mb-3" id="myRange">
+            </div>
+
+            <div class="card mb-2">
+                <label class="mb-2">Monthly Deposit</label>
+                <p class="home__result-amount mb-1">₱ 5,000</p>
+                <input type="range" min="0" max="100000" value="50" class="slider mb-3" id="myRange">
+            </div>
+
+            <div class="card mb-2">
+                <label class="mb-2">Calculation Period</label>
+                <p class="home__result-amount mb-1">10 Year/s</p>
+                <input type="range" min="1" max="50" value="10" class="slider mb-3" id="myRange">
+            </div>
+
+            
+        </div>
+    </div>
+</body>
+</html>
