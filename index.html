@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Compound interest Calcuklator is a online tool to check the interest calculated on the initial principal, which also includes all of the accumulated interest of previous periods of a deposit or loan." />
-  <title>Compound Calculator Online</title>
+    content="Compound Interest Calculator is a online tool to check the interest calculated on the initial principal, which also includes all of the accumulated interest of previous periods of a deposit or loan." />
+  <title>Compound Interest Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="home">
+    <div class="home__header">
+      <h1>Compound Interest Calculator</h1>
+    </div>
     <div class="home__result">
       <p class="home__result-label">Future Balance</p>
       <p class="home__result-amount">
@@ -26,15 +29,7 @@
           <span class="card__input-icon mr-1">₱</span>
           <span class="card__input" contenteditable="true" data-model="baseAmount"></span>
         </p>
-        <input
-          type="range"
-          min="0"
-          max="1000000"
-          step="500"
-          value="0"
-          class="slider mb-3"
-          id="baseAmount"
-        >
+        <input type="range" min="0" max="1000000" step="500" value="0" class="slider mb-3" id="baseAmount">
       </div>
 
       <div class="card mb-2">
@@ -43,15 +38,7 @@
           <span class="card__input-icon mr-1">₱</span>
           <span class="card__input" contenteditable="true" data-model="monthlyDeposit"></span>
         </p>
-        <input
-          type="range"
-          min="0"
-          max="100000"
-          value="5000"
-          step="500"
-          class="slider mb-3"
-          id="monthlyDeposit"
-        >
+        <input type="range" min="0" max="100000" value="5000" step="500" class="slider mb-3" id="monthlyDeposit">
       </div>
 
       <div class="card mb-2">
@@ -60,21 +47,14 @@
           <span class="card__input mr-1" contenteditable="true" data-model="calculationPeriod"></span>
           <span class="card__input-icon">Year/s</span>
         </p>
-        <input
-          type="range"
-          min="1"
-          max="50"
-          value="5"
-          class="slider mb-3"
-          id="calculationPeriod"
-        >
+        <input type="range" min="1" max="50" value="5" class="slider mb-3" id="calculationPeriod">
       </div>
 
       <div class="card mb-2">
         <label class="card__label">Interest Rate</label>
         <p class="card__amount">
-          <span class="card__input mr-1" contenteditable="true" data-model="interestRate">7.1</span>
-          <span class="card__input-icon" >%</span>
+          <span class="card__input mr-1" contenteditable="true" data-model="interestRate">7.65</span>
+          <span class="card__input-icon">%</span>
         </p>
       </div>
     </div>

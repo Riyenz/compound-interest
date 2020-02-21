@@ -42,7 +42,8 @@ input[type=number] {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--h-font-family);
-  font-weight: var(--h-font-weight);
+  font-weight: var(--p-font-weight);
+  font-size: .75rem;
   line-height: 1.5;
 }
 
@@ -55,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mb-2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .mr-1 {
@@ -118,9 +119,21 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem
   }
 
+  &__header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 0 2rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+
   &__result {
     position: fixed;
-    top: 1;
+    top: 3rem;
     background-color: var(--bg-color);
     padding: 2rem;
     box-shadow: inset 0px -5px 20px 0px #ddecff;
@@ -146,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 
   &__container {
     flex: 1;
-    padding: 12rem 1rem 2rem;
+    padding: 15rem 1rem 2rem;
     margin-top: -1rem;
     box-shadow: inset 0px 5px 20px 0px #ddecff;
     border: .75rem solid white;
@@ -184,13 +197,10 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     max-width: 100%;
     overflow: hidden;
-
-    &:focus, &:hover {
-      outline: none;
-      border-bottom: 1px solid var(--color);
-      height: 2rem;
-      margin-bottom: 4px;
-    }
+    border-bottom: 1px solid var(--color);
+    height: 2rem;
+    margin-bottom: 4px;
+    outline: none;
   }
 
   &__input-icon {

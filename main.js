@@ -15,7 +15,7 @@ const VARIABLES = {
   baseAmount: '0',
   monthlyDeposit: '5000',
   calculationPeriod: '5',
-  interestRate: '7.1'
+  interestRate: '7.65'
 };
 
 const VARIABLE_KEYS = Object.keys(VARIABLES);

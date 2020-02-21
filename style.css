@@ -42,7 +42,8 @@ input[type=number] {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--h-font-family);
-  font-weight: var(--h-font-weight);
+  font-weight: var(--p-font-weight);
+  font-size: .75rem;
   line-height: 1.5;
 }
 
@@ -67,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mb-2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .mr-1 {
@@ -138,9 +139,27 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
+.home__header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 0 2rem;
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
 .home__result {
   position: fixed;
-  top: 1;
+  top: 3rem;
   background-color: var(--bg-color);
   padding: 2rem;
   -webkit-box-shadow: inset 0px -5px 20px 0px #ddecff;
@@ -170,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 12rem 1rem 2rem;
+  padding: 15rem 1rem 2rem;
   margin-top: -1rem;
   -webkit-box-shadow: inset 0px 5px 20px 0px #ddecff;
           box-shadow: inset 0px 5px 20px 0px #ddecff;
@@ -214,13 +233,10 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   max-width: 100%;
   overflow: hidden;
-}
-
-.card__input:focus, .card__input:hover {
-  outline: none;
   border-bottom: 1px solid var(--color);
   height: 2rem;
   margin-bottom: 4px;
+  outline: none;
 }
 
 .card__input-icon {
